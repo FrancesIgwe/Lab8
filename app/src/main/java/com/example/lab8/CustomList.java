@@ -84,7 +84,7 @@ public class CustomList extends ArrayAdapter<City> {
     /**
      * deletes a city from a list, raise an exception if city not in the list
      * @param city (city to delete)
-     *
+     **/
 
 
     public void delete(City city){
@@ -93,7 +93,7 @@ public class CustomList extends ArrayAdapter<City> {
             throw new IllegalArgumentException();
         }
         cities.remove(index);
-    }*/
+    }
 
 
 
