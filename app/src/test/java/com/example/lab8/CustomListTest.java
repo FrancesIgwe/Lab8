@@ -44,6 +44,7 @@ public class CustomListTest {
      */
     @Test
     public void hasCityTest() {
+        list = new CustomList(null, new ArrayList<>());
         list.addCity(new City("Edmonton", "AB"));
         assertTrue(list.hasCity(new City("Edmonton", "AB")));
         list.addCity(new City("Toronto", "ON"));
