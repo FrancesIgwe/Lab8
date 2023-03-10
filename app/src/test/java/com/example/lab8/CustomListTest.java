@@ -39,10 +39,16 @@ public class CustomListTest {
     }
 
 
+    /**
+     * check if list contains a particular city
+     */
     @Test
     public void hasCityTest() {
-
+        list.addCity(new City("Edmonton", "AB"));
+        assertTrue(list.hasCity(new City("Edmonton", "AB")));
+        list.addCity(new City("Toronto", "ON"));
         assertTrue(list.hasCity(new City("Toronto", "ON")));
+
     }
 
 }
